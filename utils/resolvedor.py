@@ -80,5 +80,4 @@ Escreva apenas o código Python dentro de um bloco de código markdown. Não adi
         }
 
     finally:
-        client.close()
         db.close()

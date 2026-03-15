@@ -99,5 +99,4 @@ def fornecer_feedback_aluno(exercicio_id: int, resposta_aluno: str) -> str:
         return response.text
     
     finally:
-        client.close()
         db.close() # Garante que a conexão com o banco seja sempre fechada
