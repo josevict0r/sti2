@@ -27,7 +27,7 @@ def avaliar_tentativa_manual(
         raise HTTPException(status_code=404, detail="Exercício não encontrado")
 
     passou, pontos = avaliar_tentativa(db, exercicio_id, aluno_id, codigo)
-
+    print(f'ALUNOID----->{aluno_id}#######################################')
     return {
         "aluno_id": aluno_id,
         "exercicio_id": exercicio_id,
